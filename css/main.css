@@ -108,6 +108,30 @@ font-family: 'PT Sans', sans-serif;
      background-color: #f2f2f2;
      font-family: 'Open Sans', sans-serif;
    }
+   /* Globales */
+   .contenedor{
+     width: 85%;
+     margin: 0 auto;
+   }
+
+
+   @media (min-width: 480px){
+     .contenedor{
+       width: 95%;
+   }
+
+   @media (min-width: 768px){
+    .contenedor{
+      width: 90%;
+  }
+   }
+   @media (min-width: 992px){
+    .contenedor{
+      width: 90%;
+      max-width: 1100px;
+  }
+   }
+
 
    h2{
     font-family: 'Oswald', sans-serif;
@@ -188,6 +212,7 @@ font-family: 'PT Sans', sans-serif;
     h1.nombre-sitio{
       font-size: 11.5vw;
       margin: 0;
+      line-height: 1;
     }
    }
 
@@ -197,6 +222,79 @@ font-family: 'PT Sans', sans-serif;
    p.slogan span{
      font-weight: bold;
    }
+
+   /* Barra */
+
+   div.barra{
+     background-color: #353535;
+     padding: 20px 0;
+   }
+
+   div.logo img{
+     width: 100%;
+   }
+
+   div.logo{
+     width: 80%;
+   }
+   @media (min-width: 768px){
+    div.logo{
+      width:33%;
+      float: left;
+    } 
+   }
+
+/* Navegacion principal */
+
+nav.navegacion-principal{
+  display: none;
+}
+
+nav.navegacion-principal a{
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  transition: all .45s ease;
+
+}
+
+nav.navegacion-principal a:hover{
+  background-color: #fe4918;
+}
+
+nav.navegacion-principal a:last-child{
+  border: 2px solid #fe4918;
+  color: #fe4918;
+}
+
+
+nav.navegacion-principal a:last-child:hover{
+  color: white;
+}
+
+@media (min-width: 768px){
+  nav.navegacion-principal{
+   width: 67%;
+   float: right;
+   text-align: right;
+   display: block;
+  }
+
+  nav.navegacion-principal a{
+    margin-right: 10px;
+    padding: 10px 10px;
+    display: inline-block;
+  }
+}
+
+
+
+
+
+
+
 
 /* ==========================================================================
    Helper classes
@@ -371,4 +469,5 @@ font-family: 'PT Sans', sans-serif;
     page-break-after: avoid;
   }
 }
+   }
 

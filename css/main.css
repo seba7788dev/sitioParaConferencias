@@ -132,9 +132,27 @@ font-family: 'PT Sans', sans-serif;
   }
    }
 
+   .seccion{
+     padding: 30px 0;
+   }
+   .seccion p{
+     font-size: 1.2em;
+     text-align: center;
+   }
 
    h2{
     font-family: 'Oswald', sans-serif;
+    font-size: 2.4em;
+    text-transform: uppercase;
+    text-align: center;
+   }
+   h2::after{
+     content: '';
+     margin: 0 auto;
+     background-image: url(../img/separador.png);
+     height: 30px;
+     width: 100px;
+     display: block;
    }
    /* Header */
 
@@ -236,28 +254,35 @@ font-family: 'PT Sans', sans-serif;
 
    div.logo{
      width: 80%;
+     float: left;
+     
    }
    @media (min-width: 768px){
     div.logo{
       width:33%;
-      float: left;
+     
+      
     } 
    }
 
 /* Navegacion principal */
 
-nav.navegacion-principal{
+  nav.navegacion-principal{
   display: none;
-}
-
+} 
+ 
 nav.navegacion-principal a{
+  clear: both;/* Agergue para q no se superpongan */
   font-family: 'Oswald', sans-serif;
   color: white;
   text-decoration: none;
   font-size: 1.3em;
   text-transform: uppercase;
   transition: all .45s ease;
-
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 nav.navegacion-principal a:hover{
@@ -286,12 +311,41 @@ nav.navegacion-principal a:last-child:hover{
     margin-right: 10px;
     padding: 10px 10px;
     display: inline-block;
+
+ 
+  width: auto;
+  text-align: center;
+  margin:0 10px 0 0;
   }
 }
 
+/* Menu movil */
 
+div.menu-movil{
+  width: 60px;
+  display: block;
+  float: right;
+  text-align: right;
+  margin-top: 12px;
+}
 
+div.menu-movil span{
+  height: 8px;
+  margin-bottom: 6px;
+  background-color: white;
+  display: block;
+}
 
+@media (min-width: 768px){
+  div.menu-movil{
+    display: none;
+  }
+}
+
+div.menu-movil:hover{
+  cursor: pointer;
+}
+ 
 
 
 
